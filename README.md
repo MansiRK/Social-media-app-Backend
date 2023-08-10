@@ -64,9 +64,9 @@ Following are the entities that are majorly defined on the server:
 ## What is image File Upload?
 File upload refers to the process of transferring digital files from a local device to a remote server or storage location using a network connection. It allows users to share and distribute files such as documents, images, videos, and other multimedia content across the internet.
 
-We can store images directly to folder on our server but it is inefficient way to do. As the number of files increase or images and it will become difficult to access on the front end side.
+You can store images directly to folder on our server but it is inefficient way to do. As the number of files increase or images and it will become difficult to access on the front end side.
 
-We can make use of object storage to store the image files and use it's location URL on front end side. Whenever a user posts a post, we will create a uploader that will take the image file and push it to object storage service.
+You can make use of object storage to store the image files and use it's location URL on front end side. Whenever a user posts a post, we will create a uploader that will take the image file and push it to object storage service.
 
 Some of the Cloud Services That Provide File Upload as a Service
 1. Cloudinary
@@ -80,7 +80,8 @@ Cloudinary is a cloud-based media management platform that provides file upload,
 Cloudinary provides a pre-built file upload widget you can easily add to your site. Developers can also integrate Cloudinary into web and mobile applications using its APIs, SDKs, and pre-built UI components.
 
 ## Architecture Design
-We have used MVC architecture for the project
+MVC architecture is used for this social media application
+
 ### What is MVC architecture
 The Model-View-Controller (MVC) framework is an architectural/design pattern that separates an application into three main logical components Model, View, and Controller. Each architectural component is built to handle specific development aspects of an application. It isolates the business logic and presentation layer from each other.
 
@@ -92,10 +93,12 @@ The Model-View-Controller (MVC) framework is an architectural/design pattern tha
 ## Install dependencies for server 
 ### `npm install`
 
-## Connect to your mongodb and add info in .env
+## Mongodb Atlas URL for connecting database, necessary tokens for authentication and credentials of cloudinary are added in .env file
 
 ## Run the Express server
-### `npm start`
+1. Install nodemon module
+2. Add start command in package.json file as "nodemon server.js" to run server.js file
+3. In terminal use "npm start" command to start server
 
 ### Server runs on http://localhost:5000 
 
