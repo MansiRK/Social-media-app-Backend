@@ -46,7 +46,7 @@ Following are the entities that are majorly defined on the server:
 
 |_id|first_name|last_name|username|email|password|gender|time_stamp|
 |---|---|---|---|---|---|---|---|
-|string, unique|string|string|string, unique|string, unique|string, hashed|string|date_time|
+|string,unique|string|string|string, unique|string, unique|string, hashed|string|date_time|
 
 ### Posts Table
 
@@ -55,6 +55,9 @@ Following are the entities that are majorly defined on the server:
 |string|string|string|array|date_time|
 
 ### Comments Table
+|_id|content|likes|time_stamps|
+|---|---|---|---|
+|string|string|array|date_time|
 
 |content|tag|likes|user|postId|postUserId|timestaps|
 |---|---|---|---|---|---|---|---|
