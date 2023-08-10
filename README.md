@@ -42,26 +42,25 @@ Following are the entities that are majorly defined on the server:
 5. Comments
 7. Feeds
 ## Tables define for entities
+
 ### Users Table
 
 |_id|first_name|last_name|username|email|password|gender|time_stamp|
 |---|---|---|---|---|---|---|---|
-|string,unique|string|string|string, unique|string, unique|string, hashed|string|date_time|
+|ObjectId,unique|string|string|string, unique|string, unique|string, hashed|string|date_time|
 
 ### Posts Table
 
 |_id|user|caption|images|time_stamps|
 |---|---|---|---|---|
-|string|string|string|array|date_time|
+|ObjectId,unique|string|string|array|date_time|
 
 ### Comments Table
+
 |_id|content|likes|time_stamps|
 |---|---|---|---|
-|string|string|array|date_time|
+|ObjectId,unique|string|array|date_time|
 
-|content|tag|likes|user|postId|postUserId|timestaps|
-|---|---|---|---|---|---|---|---|
-|string|object|array|string|string|string|date_time|
 
 
 ## What is image File Upload?
