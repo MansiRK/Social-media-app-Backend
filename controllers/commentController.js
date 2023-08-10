@@ -8,7 +8,7 @@ const postModel = require("../models/postModel")
 const createComment = async (req, res) => {
   try {
     // eslint-disable-next-line object-curly-newline
-    const { content, tag, postId, postUserId } = req.body
+    const { content, postId, postUserId } = req.body
 
     // Find post
     const post = await postModel.findById(postId)
@@ -22,7 +22,7 @@ const createComment = async (req, res) => {
 
     // New comment
     const newComment = new commentModel({
-      user: req.user._id, content, tag, postId, postUserId,
+      user: req.user._id, content, postId, postUserId,
     })
 
     // Find and update post
