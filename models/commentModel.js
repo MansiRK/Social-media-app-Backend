@@ -13,9 +13,6 @@ const commentSchema = new mongoose.Schema({
       ref: "user",
     },
   ],
-  tag: {
-    type: Object,
-  },
   user: {
     type: mongoose.Types.ObjectId,
     ref: "user",
