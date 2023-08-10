@@ -29,8 +29,6 @@ In this application, user must login to view or create the post. No unauthorize 
     * Users will be able to follow each other.
 5. Unfollow -
     * Users can also unfollow each other.
-6. News Feed -
-    * User will be able to view other user's posts which he or she is following according to its generated time in news feed.
 
  
 ## Entities 
@@ -40,7 +38,7 @@ Following are the entities that are majorly defined on the server:
 3. Likes
 4. Follows
 5. Comments
-7. Feeds
+
 ## Tables define for entities
 
 ### Users Table
