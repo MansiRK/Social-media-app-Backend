@@ -96,8 +96,8 @@ The Model-View-Controller (MVC) framework is an architectural/design pattern tha
 
 ## Connect to your mongodb and add info in .env
 
-## Run the Express server only
-### `npm run server`
+## Run the Express server
+### `npm start`
 
 ### Server runs on http://localhost:5000 
 
