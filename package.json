@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MansiRK/Social-Media-App.git"
+    "url": "git+https://github.com/MansiRK/Social-media-app-Backend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MansiRK/Social-Media-App/issues"
+    "url": "https://github.com/MansiRK/Social-media-app-Backend/issues"
   },
-  "homepage": "https://github.com/MansiRK/Social-Media-App#readme",
+  "homepage": "https://github.com/MansiRK/Social-media-app-Backend#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "chai-http": "^4.4.0",
